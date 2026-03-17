@@ -1,0 +1,45 @@
+{
+    "project_name": "DroneIntercept_9M",
+    "verbose": true,
+    "ui": {
+        "show_result": false,
+        "show_debug": false,
+        "save_video": true
+    },
+    "paths": {
+        "input_source": "data/test_track_dron1.mp4",
+        "log_dir": "logs/",
+        "result_dir": "results/"
+    },
+    "tracker": {
+        "processing_width": 640.0,
+        "dynamics": {
+            "velocity_memory": 0.3,
+            "alpha_stationary": 0.3,
+            "alpha_pursuit": 0.95,
+            "pan_threshold": 8.0,
+            "fallback_decay": 0.6
+        },
+        "detection": {
+            "match_threshold_normal": 0.45,
+            "match_threshold_rapid": 0.35,
+            "spatial_penalty_sigma": 30.0,
+            "search_padding_base": 25,
+            "search_padding_scale": 2.5
+        }
+    },
+    "gmc": {
+        "enabled": true,
+        "use_homography": false,
+        "max_features": 1000
+    },
+    "limits": {
+        "max_frame_time_ms": 100
+    },
+    "initial_roi": {
+        "x": 1315.0,
+        "y": 630.0,
+        "width": 67.0,
+        "height": 35.0
+    }
+}

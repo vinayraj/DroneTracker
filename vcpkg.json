@@ -1,0 +1,13 @@
+{
+  "name": "drone-tracker",
+  "version-string": "0.1.0",
+  "dependencies": [
+    {
+      "name": "opencv",
+      "features": [ "contrib", "ffmpeg", "jpeg", "png" ]
+    },
+    "spdlog",
+    "nlohmann-json",
+    "cli11"
+  ]
+}
